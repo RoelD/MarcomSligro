@@ -1,35 +1,39 @@
-# Sligro Lokaal Limburg – Statische GitHub Page
+# Sligro Lokaal Limburg – GitHub Pages website
 
-Deze map bevat een complete statische website voor GitHub Pages, gebaseerd op de briefing voor de campagne rond lokale producten van Sligro.
+Dit is een complete statische website voor een campagne rond lokale producten van Sligro.
 
-## Wat is aangepast
+## Nieuw in deze versie
 
-- De website is opgebouwd in een Sligro-geïnspireerde look & feel.
-- De visuals zijn vervangen door **ultrarealistische foto-assets** van:
-  - lokale producten
-  - boeren / leveranciers uit de keten
-  - Sligro-medewerkers
-  - proeverijen en activatiemomenten
-  - levering met herkomstkaartje
-- De nieuwe beeldassets staan in `assets/photos/`.
-- De site blijft volledig statisch en is dus geschikt voor GitHub Pages.
-
-## Bestandsstructuur
-
-- `index.html` – hoofdpagina
-- `styles.css` – styling
-- `script.js` – interactie (menu + productfilters)
-- `assets/` – iconen en beeldmateriaal
-  - `assets/photos/` – realistische marketingbeelden
+- Meerdere pagina's in plaats van één lange pagina:
+  - `index.html`
+  - `assortiment.html`
+  - `leveranciers.html`
+  - `events.html`
+  - `campagne.html`
+  - `contact.html`
+  - `404.html`
+- Look & feel verder aangescherpt richting premium Sligro/campagnehub.
+- Ultrarealistische beeldassets verwerkt op alle belangrijke plekken.
+- Geoptimaliseerde WebP-afbeeldingen toegevoegd naast JPG-fallbacks.
+- Favicon / statusbar-icoon toegevoegd.
+- Manifest, robots.txt en sitemap.xml toegevoegd.
+- Responsieve navigatie, productfilters en kleine micro-interacties.
+- Alles blijft volledig statisch en geschikt voor GitHub Pages.
 
 ## Uploaden naar GitHub Pages
 
-1. Maak een GitHub repository aan of open je bestaande repository.
-2. Upload alle bestanden uit deze map naar de root van de repository.
-3. Ga in GitHub naar **Settings > Pages**.
-4. Kies de branch (meestal `main`) en de root-map (`/root`).
-5. Sla op. GitHub publiceert daarna automatisch de site.
+1. Pak deze zip uit.
+2. Upload alle bestanden naar de root van je GitHub-repository.
+3. Ga naar **Settings > Pages**.
+4. Kies je branch, meestal `main`.
+5. Kies de root-map `/`.
+6. Sla op.
 
-## Tip
+De site werkt zonder build-stap, zonder framework en zonder backend.
 
-Als je later nog meer echte productcategorieën wilt toevoegen, kun je eenvoudig extra kaarten in de sectie `#assortiment` plaatsen en extra beelden toevoegen in `assets/photos/`.
+## Mappen
+
+- `assets/photos/` bevat de ultrarealistische marketingbeelden.
+- `assets/` bevat iconen, favicon, logo en decoratieve patronen.
+- `styles.css` bevat alle styling.
+- `script.js` bevat menu, filters en micro-interacties.

@@ -1,37 +1,43 @@
-const nav = document.querySelector('.navlinks');
-document.querySelector('.mobile-toggle')?.addEventListener('click', () => nav.classList.toggle('open'));
 
-const links = [...document.querySelectorAll('.navlinks a')];
-const sections = links.map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean);
-const setActive = () => {
-  let current = sections[0]?.id;
-  sections.forEach(section => {
-    if (window.scrollY >= section.offsetTop - 130) current = section.id;
+const navlinks = document.querySelector('.navlinks');
+const toggle = document.querySelector('.mobile-toggle');
+
+if (toggle && navlinks) {
+  toggle.addEventListener('click', () => {
+    const open = navlinks.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
   });
-  links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === `#${current}`));
-};
-window.addEventListener('scroll', setActive); setActive();
+}
 
-const buttons = [...document.querySelectorAll('.filter-btn')];
-const cards = [...document.querySelectorAll('.product-card')];
-buttons.forEach(btn => {
-  btn.addEventListener('click', () => {
-    buttons.forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-    const filter = btn.dataset.filter;
-    cards.forEach(card => {
-      card.classList.toggle('hidden', filter !== 'all' && card.dataset.category !== filter);
+const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+document.querySelectorAll('.navlinks a').forEach(link => {
+  const href = link.getAttribute('href');
+  if (href === currentPage) link.classList.add('active');
+});
+
+const filterButtons = document.querySelectorAll('.filter-btn');
+const productCards = document.querySelectorAll('.product-card');
+
+filterButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const filter = button.dataset.filter;
+    filterButtons.forEach(btn => btn.classList.remove('active'));
+    button.classList.add('active');
+    productCards.forEach(card => {
+      const show = filter === 'all' || card.dataset.category === filter;
+      card.classList.toggle('hidden', !show);
     });
   });
 });
 
-document.querySelectorAll('[data-add]').forEach(btn => {
-  btn.addEventListener('click', () => {
-    btn.textContent = 'Toegevoegd ✓';
-    btn.classList.add('secondary');
+document.querySelectorAll('[data-add]').forEach(button => {
+  button.addEventListener('click', () => {
+    const old = button.textContent;
+    button.textContent = 'Toegevoegd aan interesse';
+    button.disabled = true;
     setTimeout(() => {
-      btn.textContent = 'Bekijk product';
-      btn.classList.remove('secondary');
+      button.textContent = old;
+      button.disabled = false;
     }, 1400);
   });
 });
