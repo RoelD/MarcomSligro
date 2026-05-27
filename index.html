@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sligro Lokaal Limburg | Van boer tot borrelplank</title>
+  <meta name="description" content="Statische GitHub Page voor een Sligro-campagne rondom lokale Limburgse producten, leveranciersverhalen en proeverijen.">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="topbar">
+    <span>Welkom in de wereld van food</span>
+    <span>Voor horeca, catering, fastservice en hotels</span>
+    <span>Lokaal aanbod voor ondernemers in Limburg</span>
+  </div>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Hoofdnavigatie">
+      <a class="logo" href="#home" aria-label="Sligro lokaal home">
+        <span class="logo-mark">S</span><span>Sligro</span>
+      </a>
+      <button class="btn secondary mobile-toggle" type="button">Menu</button>
+      <div class="navlinks">
+        <a href="#home">Home</a>
+        <a href="#assortiment">Assortiment</a>
+        <a href="#leveranciers">Leveranciers</a>
+        <a href="#webshop">Webshop</a>
+        <a href="#events">Events</a>
+        <a href="#campagne">Campagne</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-grid">
+        <div>
+          <span class="eyebrow">🌾 Lokaal Limburg · voor MKB-horeca</span>
+          <h1>Van boer tot borrelplank.</h1>
+          <p class="lead">Ontdek lokale producten, leveranciersverhalen en praktische inspiratie waarmee je jouw gasten een sterker regionaal verhaal vertelt.</p>
+          <div class="hero-actions">
+            <a class="btn" href="#assortiment">Ontdek het aanbod</a>
+            <a class="btn secondary" href="#leveranciers">Lees de verhalen</a>
+          </div>
+          <div class="stats" aria-label="Campagnedoelen">
+            <div class="stat"><b>40%</b><span>bekendheid met lokaal assortiment</span></div>
+            <div class="stat"><b>30%</b><span>associatie met lokale betrokkenheid</span></div>
+            <div class="stat"><b>+15%</b><span>groei in afzet lokale producten</span></div>
+          </div>
+        </div>
+        <figure class="hero-card">
+          <img src="assets/hero-borrelplank.svg" alt="Vectorbeeld van een Limburgse borrelplank met streekproducten">
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" id="assortiment">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Assortiment</span>
+          <h2>Lokaal kiezen zonder extra zoektijd.</h2>
+        </div>
+        <p>De ondernemer zoekt overzicht. Daarom is het aanbod opgebouwd rond herkenbare categorieën, met herkomst, toepassing en leverancier direct zichtbaar.</p>
+      </div>
+      <div class="filters" aria-label="Productfilters">
+        <button class="filter-btn active" data-filter="all" type="button">Alles</button>
+        <button class="filter-btn" data-filter="bakkerij" type="button">Bakkerij</button>
+        <button class="filter-btn" data-filter="zuivel" type="button">Zuivel</button>
+        <button class="filter-btn" data-filter="vers" type="button">Vers</button>
+        <button class="filter-btn" data-filter="borrel" type="button">Borrel</button>
+      </div>
+      <div class="product-grid">
+        <article class="product-card" data-category="bakkerij">
+          <div class="product-art"><img src="assets/hero-borrelplank.svg" alt="Limburgse vlaai"></div>
+          <div class="product-content">
+            <span class="badge">Bakkerij</span>
+            <h3>Limburgse vlaai</h3>
+            <p>Voor koffie, dessertkaart en lunchconcepten met een herkenbaar streekverhaal.</p>
+            <p class="price">Vanaf € 9,95</p>
+            <button class="btn" data-add type="button">Bekijk product</button>
+          </div>
+        </article>
+        <article class="product-card" data-category="zuivel">
+          <div class="product-art"><img src="assets/webshop-filter.svg" alt="Streekkaas"></div>
+          <div class="product-content">
+            <span class="badge">Zuivel</span>
+            <h3>Streekkaas selectie</h3>
+            <p>Voor borrelplanken, lunchgerechten en lokale menu-accenten.</p>
+            <p class="price">Vanaf € 12,50</p>
+            <button class="btn" data-add type="button">Bekijk product</button>
+          </div>
+        </article>
+        <article class="product-card" data-category="vers">
+          <div class="product-art"><img src="assets/leverancier-boerderij.svg" alt="Seizoensgroenten van lokale leveranciers"></div>
+          <div class="product-content">
+            <span class="badge">Vers</span>
+            <h3>Seizoensgroenten</h3>
+            <p>Verse producten van regionale grond, passend bij wisselende menukaarten.</p>
+            <p class="price">Dagprijs</p>
+            <button class="btn" data-add type="button">Bekijk product</button>
+          </div>
+        </article>
+        <article class="product-card" data-category="borrel">
+          <div class="product-art"><img src="assets/event-proeverij.svg" alt="Borrelpakket lokale producten"></div>
+          <div class="product-content">
+            <span class="badge">Borrel</span>
+            <h3>Lokaal proefpakket</h3>
+            <p>Een laagdrempelige samplebox voor ondernemers die het aanbod willen ervaren.</p>
+            <p class="price">Intro € 30,00</p>
+            <button class="btn" data-add type="button">Bekijk product</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="story-strip" id="leveranciers">
+      <div class="section story-grid">
+        <div>
+          <span class="eyebrow">Leveranciersverhalen</span>
+          <h2>Niet alleen inkopen, maar een verhaal kunnen serveren.</h2>
+          <p>Elke leverancier krijgt een vast format: beeld, korte herkomsttekst, quote en directe link naar het product. Zo kan de horecaondernemer het verhaal makkelijk gebruiken richting zijn gasten.</p>
+          <div class="grid-3">
+            <div class="card"><img src="assets/icon-local.svg" alt=""><h3>Korte keten</h3><p>Duidelijke herkomst en regionale beschikbaarheid.</p></div>
+            <div class="card"><img src="assets/icon-story.svg" alt=""><h3>Storytelling</h3><p>Content die bruikbaar is voor menukaart, socials en bediening.</p></div>
+            <div class="card"><img src="assets/icon-chef.svg" alt=""><h3>Vakgericht</h3><p>Geschreven voor ondernemers die weinig tijd hebben.</p></div>
+          </div>
+        </div>
+        <img src="assets/leverancier-boerderij.svg" alt="Hyperrealistische vectorillustratie van een regionale leverancier op een boerderij">
+      </div>
+    </section>
+
+    <section class="section" id="webshop">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Webshop demo</span>
+          <h2>Een lokale filter die direct helpt kiezen.</h2>
+        </div>
+        <p>De briefing benoemt dat het huidige lokale aanbod onvoldoende zichtbaar is. Deze pagina laat zien hoe een duidelijke webshoplaag de keuze eenvoudiger maakt.</p>
+      </div>
+      <div class="grid-3">
+        <article class="card">
+          <img src="assets/webshop-filter.svg" alt="Vectorillustratie van een webshop met lokaal filter">
+          <h3>Filter op lokaal / regionaal</h3>
+          <p>Ondernemers hoeven niet meer handmatig te zoeken naar producten met herkomstwaarde.</p>
+        </article>
+        <article class="card">
+          <img src="assets/bezorging-herkomst.svg" alt="Vectorillustratie van bezorging met herkomstkaartje">
+          <h3>Herkomstkaartje bij levering</h3>
+          <p>Een tastbaar kaartje of QR-code maakt van een levering een communicatiemoment.</p>
+        </article>
+        <article class="card">
+          <img src="assets/hero-borrelplank.svg" alt="Borrelplank met lokale producten">
+          <h3>Productbundels</h3>
+          <p>Bundels helpen ondernemers snel starten met een lokaal aanbod op hun kaart.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="events">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Events</span>
+          <h2>Proeven maakt lokaal concreet.</h2>
+        </div>
+        <p>Leveranciersdagen, proeverijen en workshops maken het assortiment tastbaar en verlagen de drempel voor een eerste aankoop.</p>
+      </div>
+      <div class="story-grid">
+        <img src="assets/event-proeverij.svg" alt="Proeverij en leveranciersdag in Sligro sfeer">
+        <div class="card">
+          <span class="badge">Lokaal & Lekker</span>
+          <h3>Leveranciersdag in de vestiging</h3>
+          <p>Ontmoet producenten, proef seizoensproducten en ontvang een introductieaanbod voor de eerste bestelling.</p>
+          <ul>
+            <li>Productdemo's en toepassingen voor horeca</li>
+            <li>Sampleboxen voor vaste klanten</li>
+            <li>Contentpakket voor menukaart en social posts</li>
+          </ul>
+          <a class="btn" href="#campagne">Bekijk planning</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="campagne">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Touch · Tell · Sell</span>
+          <h2>De klantreis van bewustwording naar aankoop.</h2>
+        </div>
+        <p>De website is ingericht als digitale vertaling van de 360°-campagne: eerst inspireren, daarna bewijzen, vervolgens activeren.</p>
+      </div>
+      <div class="timeline">
+        <article class="phase">
+          <span>Juni 2026</span>
+          <h3>Voorbereiding</h3>
+          <p>Concept, contentstrategie, leveranciersselectie en sampleboxen.</p>
+        </article>
+        <article class="phase">
+          <span>Jul — sep 2026</span>
+          <h3>Touch</h3>
+          <p>Social ads, OOH, eerste portretten en e-mailcampagne.</p>
+        </article>
+        <article class="phase">
+          <span>Okt — dec 2026</span>
+          <h3>Tell</h3>
+          <p>MagaZiNe thema-editie, PR, ZiN-workshop en POS-materiaal.</p>
+        </article>
+        <article class="phase">
+          <span>Jan — mei 2027</span>
+          <h3>Sell</h3>
+          <p>Introductiekorting, proeverijen, LinkedIn-campagne en eindmeting.</p>
+        </article>
+      </div>
+
+      <div class="cta" style="margin-top:2rem">
+        <div>
+          <h2>Sligro verbindt ondernemers met de smaak van hun regio.</h2>
+          <p>Een statische GitHub Page als campagnehub: snel te uploaden, responsive en volledig zonder backend.</p>
+        </div>
+        <div>
+          <a class="btn" href="#assortiment">Start met lokaal aanbod</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>
+        <div class="logo" style="color:white"><span class="logo-mark">S</span><span>Sligro Lokaal</span></div>
+        <p>Demo-campagnehub voor lokale producten en leveranciersverhalen.</p>
+      </div>
+      <div>
+        <strong>GitHub Pages</strong>
+        <p>Upload deze bestanden naar je repository en zet Pages aan voor de root of docs-map.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

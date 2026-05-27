@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 640">
+<title>Digitale webshop met lokaal filter</title>
+<defs>
+  <filter id="grain" x="-20%" y="-20%" width="140%" height="140%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" seed="12" result="noise"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer>
+      <feFuncA type="table" tableValues="0 0.08"/>
+    </feComponentTransfer>
+    <feBlend mode="multiply" in2="SourceGraphic"/>
+  </filter>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+    <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#001b12" flood-opacity=".24"/>
+  </filter>
+  <linearGradient id="green" x1="0" x2="1" y1="0" y2="1">
+    <stop offset="0" stop-color="#004f35"/>
+    <stop offset="1" stop-color="#00734b"/>
+  </linearGradient>
+  <linearGradient id="gold" x1="0" x2="1" y1="0" y2="1">
+    <stop offset="0" stop-color="#f8d86a"/>
+    <stop offset="1" stop-color="#b8860b"/>
+  </linearGradient>
+</defs>
+
+<rect width="900" height="640" fill="#f5f0e6"/>
+<rect x="78" y="80" width="744" height="480" rx="32" fill="#fff" filter="url(#shadow)"/>
+<rect x="78" y="80" width="744" height="82" rx="32" fill="#004f35"/>
+<text x="126" y="132" font-family="Georgia, serif" font-size="36" font-weight="700" fill="#fff">Sligro</text>
+<rect x="310" y="104" width="330" height="35" rx="17" fill="#f2eddf"/>
+<text x="342" y="128" font-family="Arial" font-size="16" fill="#436257">Zoek lokale producten</text>
+<rect x="662" y="104" width="112" height="35" rx="17" fill="#d7bd4a"/>
+<text x="718" y="127" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#004f35">Filter: lokaal</text>
+<g transform="translate(120 205)">
+  <rect width="185" height="270" rx="22" fill="#f7f3e9" stroke="#e0d5bb"/>
+  <ellipse cx="92" cy="80" rx="62" ry="42" fill="#e4b043"/>
+  <path d="M38 76 C67 51 127 48 148 80 C119 109 62 111 38 76Z" fill="#f8e0a4"/>
+  <text x="24" y="170" font-family="Arial" font-size="22" font-weight="700" fill="#004f35">Limburgse vlaai</text>
+  <text x="24" y="205" font-family="Arial" font-size="15" fill="#555">Van bakker uit de regio</text>
+  <rect x="24" y="225" width="137" height="34" rx="17" fill="#004f35"/>
+</g>
+<g transform="translate(358 205)">
+  <rect width="185" height="270" rx="22" fill="#f7f3e9" stroke="#e0d5bb"/>
+  <path d="M35 110 C72 38 137 50 153 110 C115 147 65 146 35 110Z" fill="#e8cc72"/>
+  <text x="24" y="170" font-family="Arial" font-size="22" font-weight="700" fill="#004f35">Streekkaas</text>
+  <text x="24" y="205" font-family="Arial" font-size="15" fill="#555">Korte keten, vol smaak</text>
+  <rect x="24" y="225" width="137" height="34" rx="17" fill="#004f35"/>
+</g>
+<g transform="translate(596 205)">
+  <rect width="185" height="270" rx="22" fill="#f7f3e9" stroke="#e0d5bb"/>
+  <g transform="translate(32 48)"><ellipse cx="35" cy="60" rx="28" ry="55" fill="#7b351b"/><ellipse cx="83" cy="62" rx="31" ry="58" fill="#b54a28"/><ellipse cx="120" cy="62" rx="25" ry="55" fill="#d8a135"/></g>
+  <text x="24" y="170" font-family="Arial" font-size="22" font-weight="700" fill="#004f35">Seizoensgroente</text>
+  <text x="24" y="205" font-family="Arial" font-size="15" fill="#555">Vers van Limburgse grond</text>
+  <rect x="24" y="225" width="137" height="34" rx="17" fill="#004f35"/>
+</g>
+<g filter="url(#grain)"><rect width="900" height="640" fill="transparent"/></g>
+</svg>
