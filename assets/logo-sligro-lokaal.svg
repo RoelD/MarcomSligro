@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="220" height="72" viewBox="0 0 220 72" role="img" aria-label="Sligro Lokaal">
-<defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#004f35"/><stop offset="1" stop-color="#006b47"/></linearGradient></defs>
-<ellipse cx="48" cy="36" rx="44" ry="28" fill="url(#g)" stroke="#d7bd4a" stroke-width="4"/>
-<text x="22" y="45" font-family="Georgia,serif" font-size="30" font-weight="700" fill="#fffaf0">Sligro</text>
-<path d="M89 48h72" stroke="#d7bd4a" stroke-width="4" stroke-linecap="round"/>
-<text x="105" y="32" font-family="Inter,Arial,sans-serif" font-size="20" font-weight="800" fill="#004f35">Lokaal</text>
-<text x="105" y="58" font-family="Inter,Arial,sans-serif" font-size="12" font-weight="700" fill="#67756f">Limburg</text>
-</svg>

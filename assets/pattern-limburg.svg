@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
-<defs>
-<pattern id="stars" width="96" height="96" patternUnits="userSpaceOnUse">
-<path d="M48 13l7 22 23 0-19 13 7 22-18-14-18 14 7-22-19-13 23 0z" fill="#d7bd4a" opacity=".075"/>
-<circle cx="12" cy="82" r="3" fill="#004f35" opacity=".06"/>
-</pattern>
-</defs>
-<rect width="1200" height="700" fill="url(#stars)"/>
-</svg>

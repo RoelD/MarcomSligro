@@ -1,156 +1,25 @@
 <!doctype html>
 <html lang="nl">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Assortiment | Sligro Lokaal Limburg</title>
-  <meta name="description" content="Ontdek lokale Limburgse producten met filters, toepassingen en herkomstverhalen.">
-  <meta name="theme-color" content="#004f35">
-  <meta property="og:title" content="Assortiment | Sligro Lokaal Limburg">
-  <meta property="og:description" content="Ontdek lokale Limburgse producten met filters, toepassingen en herkomstverhalen.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/photos/hero-borrelplank.jpg">
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="manifest" href="manifest.webmanifest">
-  <link rel="preload" as="image" href="assets/photos/hero-borrelplank.webp" type="image/webp">
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Assortiment | Lokale producten bij Sligro</title>
+  <meta name="description" content="Lokale inspiratie voor MKB-horecaondernemers.">
+  <link rel="icon" href="assets/favicon.ico">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<div class="topbar">
-  <span>Welkom in de wereld van food</span>
-  <span>Lokale producten voor horecaondernemers</span>
-  <span>Limburg · Touch · Tell · Sell</span>
-</div>
 <header class="site-header">
-  <nav class="nav" aria-label="Hoofdnavigatie">
-    <a class="brand" href="index.html" aria-label="Sligro Lokaal home">
-      <img src="assets/logo-sligro.svg" alt="Sligro Lokaal Limburg">
-    </a>
-    <button class="mobile-toggle" type="button" aria-expanded="false" aria-controls="navlinks">Menu</button>
-    <div class="navlinks" id="navlinks">
-<a href="index.html">Home</a>
-<a href="assortiment.html">Assortiment</a>
-<a href="leveranciers.html">Leveranciers</a>
-<a href="events.html">Events</a>
-<a href="campagne.html">Campagne</a>
-<a href="contact.html">Contact</a>
-</div>
+  <a class="brand" href="index.html" aria-label="Naar homepage"><img src="assets/sligro-logo-header.webp" alt="Sligro"></a>
+  <button class="nav-toggle" aria-label="Menu openen" aria-expanded="false">☰</button>
+  <nav class="main-nav" aria-label="Hoofdnavigatie">
+    <a href="index.html">Home</a><a href="inspiratie.html">Inspiratie</a><a href="recepten.html">Recepten</a><a href="assortiment.html">Assortiment</a><a href="herkennen.html">Herkennen</a><a href="verhalen.html">Verhalen</a><a class="nav-cta" href="contact.html">Verder lezen</a>
   </nav>
 </header>
-
-<main>
-  <section class="page-hero clean-hero">
-    <div class="page-hero-copy">
-      <span class="eyebrow">Assortiment</span>
-      <h1>Lokaal kiezen zonder extra zoektijd.</h1>
-      <p class="lead">De ondernemer wil niet zoeken naar losse herkomstinformatie. Deze assortimentspagina laat zien hoe lokale producten, toepassing en leverancier in één overzicht samenkomen.</p>
-      <div class="mini-list">
-        <span>✓ filterbaar op categorie</span>
-        <span>✓ direct toepasbaar op de kaart</span>
-        <span>✓ gekoppeld aan herkomstverhaal</span>
-      </div>
-    </div>
-    <picture class="page-visual">
-  <source srcset="assets/photos/product-seizoensgroenten.webp" type="image/webp">
-  <img src="assets/photos/product-seizoensgroenten.jpg" alt="Seizoensgroenten uit de regio" loading="eager">
-</picture>
-  </section>
-
-  <section class="section">
-    <div class="section-head">
-      <div><span class="eyebrow">Productselectie</span><h2>Lokale producten voor elk moment op de kaart.</h2></div>
-      <p>Van koffie en dessert tot borrelplank en seizoensmenu: elk product heeft een duidelijke rol in het horecaconcept.</p>
-    </div>
-
-    <div class="filters" aria-label="Productfilters">
-      <button class="filter-btn active" data-filter="all" type="button">Alles</button>
-      <button class="filter-btn" data-filter="bakkerij" type="button">Bakkerij</button>
-      <button class="filter-btn" data-filter="zuivel" type="button">Zuivel</button>
-      <button class="filter-btn" data-filter="vers" type="button">Vers</button>
-      <button class="filter-btn" data-filter="borrel" type="button">Borrel</button>
-      <button class="filter-btn" data-filter="service" type="button">Service</button>
-    </div>
-
-    <div class="product-grid">
-      <article class="product-card" data-category="bakkerij">
-        <div class="product-art"><picture class="">
-  <source srcset="assets/photos/product-vlaai.webp" type="image/webp">
-  <img src="assets/photos/product-vlaai.jpg" alt="Limburgse vlaai" loading="lazy">
-</picture></div>
-        <div class="product-content"><span class="badge">Bakkerij</span><h3>Limburgse vlaai</h3><p>Voor koffie, dessertkaart en lunchconcepten met een herkenbaar streekverhaal.</p><div class="meta-row"><span>Toepassing</span><b>Koffie & dessert</b></div><button class="btn" data-add type="button">Toon interesse</button></div>
-      </article>
-      <article class="product-card" data-category="zuivel">
-        <div class="product-art"><picture class="">
-  <source srcset="assets/photos/product-streekkaas.webp" type="image/webp">
-  <img src="assets/photos/product-streekkaas.jpg" alt="Regionale kazen" loading="lazy">
-</picture></div>
-        <div class="product-content"><span class="badge">Zuivel</span><h3>Streekkaas selectie</h3><p>Voor borrelplanken, lunchgerechten en lokale menu-accenten.</p><div class="meta-row"><span>Toepassing</span><b>Borrel & lunch</b></div><button class="btn" data-add type="button">Toon interesse</button></div>
-      </article>
-      <article class="product-card" data-category="vers">
-        <div class="product-art"><picture class="">
-  <source srcset="assets/photos/product-seizoensgroenten.webp" type="image/webp">
-  <img src="assets/photos/product-seizoensgroenten.jpg" alt="Seizoensgroenten" loading="lazy">
-</picture></div>
-        <div class="product-content"><span class="badge">Vers</span><h3>Seizoensgroenten</h3><p>Verse producten van regionale grond, passend bij wisselende menukaarten.</p><div class="meta-row"><span>Toepassing</span><b>Seizoensmenu</b></div><button class="btn" data-add type="button">Toon interesse</button></div>
-      </article>
-      <article class="product-card" data-category="borrel">
-        <div class="product-art"><picture class="">
-  <source srcset="assets/photos/hero-borrelplank.webp" type="image/webp">
-  <img src="assets/photos/hero-borrelplank.jpg" alt="Borrelplank met streekproducten" loading="lazy">
-</picture></div>
-        <div class="product-content"><span class="badge">Borrel</span><h3>Borrelplank basis</h3><p>Een samengestelde bundel met kaas, vleeswaren, brood, fruit en chutney.</p><div class="meta-row"><span>Toepassing</span><b>Terras & borrel</b></div><button class="btn" data-add type="button">Toon interesse</button></div>
-      </article>
-      <article class="product-card" data-category="borrel">
-        <div class="product-art"><picture class="">
-  <source srcset="assets/photos/product-samplebox.webp" type="image/webp">
-  <img src="assets/photos/product-samplebox.jpg" alt="Lokaal proefpakket" loading="lazy">
-</picture></div>
-        <div class="product-content"><span class="badge">Samplebox</span><h3>Lokaal proefpakket</h3><p>Een laagdrempelige selectie waarmee ondernemers het lokale aanbod kunnen testen.</p><div class="meta-row"><span>Toepassing</span><b>Eerste kennismaking</b></div><button class="btn" data-add type="button">Toon interesse</button></div>
-      </article>
-      <article class="product-card" data-category="service">
-        <div class="product-art"><picture class="">
-  <source srcset="assets/photos/bezorging-herkomst.webp" type="image/webp">
-  <img src="assets/photos/bezorging-herkomst.jpg" alt="Levering met herkomstkaartje" loading="lazy">
-</picture></div>
-        <div class="product-content"><span class="badge">Service</span><h3>Herkomstkaartje</h3><p>Een QR of kaartje met korte tekst die direct bruikbaar is voor bediening of menukaart.</p><div class="meta-row"><span>Toepassing</span><b>Storytelling</b></div><button class="btn" data-add type="button">Toon interesse</button></div>
-      </article>
-    </div>
-  </section>
-
-  <section class="section shop-demo">
-    <div class="shop-panel">
-      <div>
-        <span class="eyebrow">Webshoplaag</span>
-        <h2>Zo wordt lokaal vindbaar.</h2>
-        <p>Een duidelijke filter “Lokaal Limburg”, productbundels en herkomstkaartjes zorgen dat de ondernemer sneller begrijpt wat beschikbaar is en waarom het waarde toevoegt.</p>
-      </div>
-      <div class="shop-steps">
-        <div><b>1</b><span>Kies categorie</span></div>
-        <div><b>2</b><span>Bekijk toepassing</span></div>
-        <div><b>3</b><span>Gebruik het verhaal</span></div>
-      </div>
-    </div>
-  </section>
-</main>
-
-<footer class="footer">
-  <div class="footer-inner">
-    <div class="footer-brand">
-      <img src="assets/logo-sligro.svg" alt="Sligro Lokaal Limburg">
-      <p>Campagnehub voor lokale producten, leveranciersverhalen en activatie in de regio Limburg.</p>
-    </div>
-    <div>
-      <strong>Voor horecaondernemers</strong>
-      <p>Ontdek producten, verhalen en toepassingen die het menu onderscheidender maken.</p>
-    </div>
-    <div>
-      <strong>Voor GitHub Pages</strong>
-      <p>Volledig statisch gebouwd met HTML, CSS, JavaScript en geoptimaliseerde beeldassets.</p>
-    </div>
-  </div>
+<main><section class="page-hero"><p class="eyebrow">Assortiment</p><h1>Lokale categorieën als inspiratie voor je kaart.</h1><p class="lead">Geen webshop, maar een overzicht van productgroepen waarmee je snel lokale accenten aan je kaart kunt toevoegen.</p></section><section class="product-list"><article class="product" id=""><img src="assets/images/vlaai.webp" alt="Limburgse vlaai"><div><h2>Limburgse vlaai</h2><p>Voor koffie, dessert, vergaderbreaks en arrangementen. Klein snijden maakt het toegankelijk en margegericht.</p><p><strong>Toepassing op de kaart:</strong> Mini-vlaaiproeverij, koffiedeal of hotelarrangement.</p><a class="btn secondary" href="recepten.html#mini-vlaaiproeverij">Bekijk toepassing</a></div></article><article class="product" id=""><img src="assets/images/streekkaas.webp" alt="Streekkaas"><div><h2>Streekkaas</h2><p>Een herkenbaar lokaal product dat weinig voorbereiding vraagt en goed combineert met brood, noten en zoet.</p><p><strong>Toepassing op de kaart:</strong> Lunchspecial, borrelplank of kaas van de week.</p><a class="btn secondary" href="recepten.html#streekkaasplank">Bekijk toepassing</a></div></article><article class="product" id=""><img src="assets/images/seizoensgroenten.webp" alt="Seizoensgroenten"><div><h2>Seizoensgroenten</h2><p>Flexibel inzetbaar doordat je kunt wisselen met beschikbaarheid, prijs en seizoen.</p><p><strong>Toepassing op de kaart:</strong> Vegetarische special, buffetcomponent of warme groentegarnituur.</p><a class="btn secondary" href="recepten.html#gegrilde-seizoensgroenten">Bekijk toepassing</a></div></article><article class="product" id=""><img src="assets/images/borrelplank.webp" alt="Borrelproducten"><div><h2>Borrelproducten</h2><p>Combineer kaas, brood, groenten, spreads en noten tot één verkoopbaar concept.</p><p><strong>Toepassing op de kaart:</strong> Sharingplank, terrasactie of zakelijke borrel.</p><a class="btn secondary" href="recepten.html#boer-tot-borrelplank">Bekijk toepassing</a></div></article><article class="product" id="samplebox"><img src="assets/images/samplebox.webp" alt="Samplebox / proefpakket"><div><h2>Samplebox / proefpakket</h2><p>Een praktische manier om producten te testen met team of keuken voordat ze op de kaart komen.</p><p><strong>Toepassing op de kaart:</strong> Interne proeverij of menukaartontwikkeling.</p><a class="btn secondary" href="inspiratie.html">Bekijk toepassing</a></div></article><article class="product" id=""><img src="assets/images/herkomstkaartjes.webp" alt="Herkomstkaartjes"><div><h2>Herkomstkaartjes</h2><p>Materiaal dat helpt om het lokale verhaal kort en duidelijk richting gast te maken.</p><p><strong>Toepassing op de kaart:</strong> Tafelkaart, buffetkaartje, menukaarttekst of QR-verwijzing.</p><a class="btn secondary" href="herkennen.html">Bekijk toepassing</a></div></article></section></main>
+<footer class="site-footer">
+  <div><strong>Lokale producten bij Sligro</strong><p>Een inspirerende online omgeving voor MKB-horecaondernemers die meer willen doen met lokale producten van Sligro.</p></div>
+  <div class="footer-links"><a href="recepten.html">Recepten</a><a href="inspiratie.html">Inspiratie</a><a href="verhalen.html">Verhalen</a><a href="https://zin.sligro.nl/">ZiN Inspiratielab</a></div>
 </footer>
-
 <script src="script.js"></script>
 </body>
 </html>
