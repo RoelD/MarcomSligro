@@ -11,8 +11,9 @@ if (toggle && navlinks) {
 
 const currentPage = window.location.pathname.split('/').pop() || 'index.html';
 document.querySelectorAll('.navlinks a').forEach(link => {
-  const href = link.getAttribute('href');
-  if (href === currentPage) link.classList.add('active');
+  if (link.getAttribute('href') === currentPage) {
+    link.classList.add('active');
+  }
 });
 
 const filterButtons = document.querySelectorAll('.filter-btn');
@@ -24,20 +25,20 @@ filterButtons.forEach(button => {
     filterButtons.forEach(btn => btn.classList.remove('active'));
     button.classList.add('active');
     productCards.forEach(card => {
-      const show = filter === 'all' || card.dataset.category === filter;
-      card.classList.toggle('hidden', !show);
+      const visible = filter === 'all' || card.dataset.category === filter;
+      card.classList.toggle('hidden', !visible);
     });
   });
 });
 
 document.querySelectorAll('[data-add]').forEach(button => {
   button.addEventListener('click', () => {
-    const old = button.textContent;
-    button.textContent = 'Toegevoegd aan interesse';
+    const original = button.textContent;
+    button.textContent = 'Interesse opgeslagen';
     button.disabled = true;
     setTimeout(() => {
-      button.textContent = old;
+      button.textContent = original;
       button.disabled = false;
-    }, 1400);
+    }, 1500);
   });
 });

@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact | Sligro Lokaal Limburg</title>
-  <meta name="description" content="Vraag een samplebox of leveranciersdag aan voor lokale producten.">
+  <meta name="description" content="Toon interesse in sampleboxen, proeverijen of lokaal assortiment.">
   <meta name="theme-color" content="#004f35">
   <meta property="og:title" content="Contact | Sligro Lokaal Limburg">
-  <meta property="og:description" content="Vraag een samplebox of leveranciersdag aan voor lokale producten.">
+  <meta property="og:description" content="Toon interesse in sampleboxen, proeverijen of lokaal assortiment.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="assets/photos/hero-borrelplank.jpg">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
@@ -20,14 +20,14 @@
 <div class="topbar">
   <span>Welkom in de wereld van food</span>
   <span>Lokale producten voor horecaondernemers</span>
-  <span>Campagnehub · Limburg</span>
+  <span>Limburg · Touch · Tell · Sell</span>
 </div>
 <header class="site-header">
   <nav class="nav" aria-label="Hoofdnavigatie">
-    <a class="brand" href="index.html" aria-label="Sligro lokaal home">
-      <img src="assets/logo-sligro-lokaal.svg" alt="Sligro Lokaal">
+    <a class="brand" href="index.html" aria-label="Sligro Lokaal home">
+      <img src="assets/logo-sligro.svg" alt="Sligro Lokaal Limburg">
     </a>
-    <button class="btn secondary mobile-toggle" type="button" aria-expanded="false" aria-controls="navlinks">Menu</button>
+    <button class="mobile-toggle" type="button" aria-expanded="false" aria-controls="navlinks">Menu</button>
     <div class="navlinks" id="navlinks">
 <a href="index.html">Home</a>
 <a href="assortiment.html">Assortiment</a>
@@ -40,42 +40,65 @@
 </header>
 
 <main>
-  <section class="page-hero">
-    <div><span class="eyebrow">Actie</span><h1>Start met lokale producten.</h1><p class="lead">Een eenvoudige conversiepagina voor ondernemers die interesse hebben in sampleboxen, proeverijen of lokaal assortiment.</p></div>
-    <picture class="page-hero-img">
-      <source srcset="assets/photos/medewerker-winkel.webp" type="image/webp">
-      <img src="assets/photos/medewerker-winkel.jpg" alt="Medewerker adviseert over lokale producten" loading="eager">
-    </picture>
+  <section class="page-hero clean-hero">
+    <div class="page-hero-copy">
+      <span class="eyebrow">Actie</span>
+      <h1>Start met lokale producten.</h1>
+      <p class="lead">Een conversiepagina voor ondernemers die een samplebox willen proberen, een leveranciersdag willen bezoeken of advies over lokaal assortiment willen.</p>
+    </div>
+    <picture class="page-visual">
+  <source srcset="assets/photos/medewerker-winkel.webp" type="image/webp">
+  <img src="assets/photos/medewerker-winkel.jpg" alt="Medewerker adviseert over lokale producten" loading="eager">
+</picture>
   </section>
-  <section class="section contact-layout">
-    <form class="contact-form">
-      <label>Naam zaak<input type="text" placeholder="Bijv. Wycked Bites"></label>
-      <label>Type onderneming<select><option>Restaurant</option><option>Catering</option><option>Fastservice</option><option>Hotel</option><option>Overig</option></select></label>
-      <label>Interesse<select><option>Samplebox lokale producten</option><option>Leveranciersdag</option><option>Webshopfilter lokaal</option><option>Adviesgesprek</option></select></label>
-      <label>E-mailadres<input type="email" placeholder="naam@bedrijf.nl"></label>
-      <button class="btn" type="button" data-add>Aanvraag simuleren</button>
-      <p class="form-note">Demoformulier voor de statische GitHub Page. Er wordt niets verzonden.</p>
-    </form>
-    <div class="card"><h2>Waarom deze conversiestap?</h2><p>De doelgroep is druk en wil concreet weten wat lokaal oplevert. Een samplebox of eventinschrijving is daarom een logische laagdrempelige vervolgstap.</p><picture class="">
-      <source srcset="assets/photos/product-samplebox.webp" type="image/webp">
-      <img src="assets/photos/product-samplebox.jpg" alt="Samplebox met lokale producten" loading="lazy">
-    </picture></div>
+
+  <section class="section contact-section">
+    <div class="contact-card">
+      <span class="eyebrow">Interesseformulier</span>
+      <h2>Waar wil je mee starten?</h2>
+      <form class="contact-form">
+        <label>Naam onderneming<input type="text" name="company" aria-label="Naam onderneming"></label>
+        <label>Type onderneming
+          <select name="type" aria-label="Type onderneming">
+            <option>Restaurant</option><option>Catering</option><option>Fastservice</option><option>Hotel</option><option>Overig foodservice</option>
+          </select>
+        </label>
+        <label>Interesse
+          <select name="interest" aria-label="Interesse">
+            <option>Samplebox lokale producten</option><option>Leveranciersdag bezoeken</option><option>Advies over lokaal assortiment</option><option>Contentpakket voor menukaart</option>
+          </select>
+        </label>
+        <label>E-mailadres<input type="email" name="email" aria-label="E-mailadres"></label>
+        <button class="btn" type="button" data-add>Interesse opslaan</button>
+      </form>
+    </div>
+
+    <aside class="contact-aside">
+      <picture class="">
+  <source srcset="assets/photos/product-samplebox.webp" type="image/webp">
+  <img src="assets/photos/product-samplebox.jpg" alt="Samplebox met lokale producten" loading="lazy">
+</picture>
+      <div>
+        <h3>Waarom deze stap werkt</h3>
+        <p>Een samplebox of eventinschrijving is concreet, laagdrempelig en past bij ondernemers die weinig tijd hebben maar wel onderscheidend willen inkopen.</p>
+      </div>
+    </aside>
   </section>
 </main>
 
 <footer class="footer">
   <div class="footer-inner">
-    <div>
-      <img class="footer-logo" src="assets/logo-sligro-lokaal.svg" alt="Sligro Lokaal">
-      <p>Demo-campagnehub voor lokale producten, leveranciersverhalen en activatie in de regio Limburg.</p>
+    <div class="footer-brand">
+      <img src="assets/logo-sligro.svg" alt="Sligro Lokaal Limburg">
+      <p>Campagnehub voor lokale producten, leveranciersverhalen en activatie in de regio Limburg.</p>
     </div>
     <div>
-      <strong>GitHub Pages-ready</strong>
-      <p>Volledig statisch: HTML, CSS, JavaScript en geoptimaliseerde assets. Geen backend nodig.</p>
+      <strong>Voor horecaondernemers</strong>
+      <p>Ontdek producten, verhalen en toepassingen die het menu onderscheidender maken.</p>
     </div>
     <div>
-      <strong>Campagne-opbouw</strong>
-      <p>Touch · Tell · Sell, met productfilters, storytelling, events en conversieblokken.</p>
+      <strong>Voor GitHub Pages</strong>
+      <p>Volledig statisch gebouwd met HTML, CSS, JavaScript en geoptimaliseerde beeldassets.</p>
     </div>
   </div>
 </footer>
