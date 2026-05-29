@@ -1,2 +1,15 @@
-Alle interne links, ankers en lokale assets zijn gecontroleerd.
-Geen fouten gevonden.
+# Link- en assetcontrole
+
+Status: gecontroleerd na optimalisatie.
+
+- Interne HTML-links: OK
+- Interne ankers: OK
+- Lokale assets: OK
+- Sligro-mailto verwijderd: OK
+- Sligro-telefoonnummer verwijderd: OK
+- Placeholder CTA's samplebox/proeverij: gedeactiveerd
+- SCSS-bronbestand toegevoegd: `assets/scss/styles.scss`
+- Gecompileerde CSS aanwezig: `styles.css`
+- Studieprojectmelding bovenaan via `script.js`: OK
+
+GitHub Pages blijft geschikt, omdat alle pagina's statisch zijn en `index.html` in de root staat.

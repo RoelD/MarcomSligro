@@ -1,6 +1,8 @@
 # Sligro lokaal – GitHub Pages website
 
-Statische website voor een Sligro-inspiratieomgeving rondom lokale producten voor MKB-horecaondernemers.
+Statische GitHub Pages-website voor een Sligro/ZiN-geïnspireerde inspiratieomgeving rondom lokale producten voor MKB-horecaondernemers.
+
+> Let op: dit is een studieproject voor Avans. Hoewel het concept is gemaakt binnen een leercontext met Sligro als leerbedrijf, is deze website niet gemaakt in opdracht van Sligro en betreft dit geen officiële Sligro-publicatie.
 
 ## Bestanden
 
@@ -16,40 +18,72 @@ Statische website voor een Sligro-inspiratieomgeving rondom lokale producten voo
 - `styles.css`
 - `script.js`
 - `assets/`
+- `assets/scss/styles.scss`
 
 ## GitHub Pages uploaden
 
 1. Pak de zip uit.
-2. Upload alle bestanden naar de root van je GitHub Pages repository.
+2. Upload de inhoud van de map naar de root van je GitHub Pages-repository.
 3. Controleer dat `index.html` in de hoofdmap staat.
 4. Ga in GitHub naar **Settings > Pages**.
 5. Kies de juiste branch, meestal `main`, en de root-map `/`.
 6. Wacht tot GitHub Pages opnieuw gepubliceerd is.
 
-## Logo
+## SCSS / CSS
 
-Het officiële Sligro-logo is als asset opgenomen in `assets/sligro-logo.jpeg` en de geoptimaliseerde header-versie staat in `assets/sligro-logo-header.webp`.
+De site blijft volledig statisch en werkt direct op GitHub Pages.
 
-## Afbeeldingen
+- `styles.css` staat in de root en wordt door de HTML-pagina's gebruikt.
+- `assets/scss/styles.scss` is toegevoegd als nette bronstructuur voor verdere ontwikkeling.
+- Gebruik je lokaal Sass? Compileer dan bijvoorbeeld naar `styles.css`.
 
-De afbeeldingen staan in `assets/images/` als lokale assets. De bestandsnamen zijn logisch gekozen voor beheer en vervanging, zoals:
+Voorbeeld:
 
-- `lokale-borrelplank.webp`
-- `limburgse-leverancier.webp`
-- `horecaondernemer-keuken.webp`
-- `samplebox-lokaal.webp`
-- `proeverij-sligro.webp`
-- `lokale-producten-schap.webp`
+```bash
+sass assets/scss/styles.scss styles.css
+```
 
-## Technische opmerkingen
+Omdat GitHub Pages deze site als eenvoudige statische site gebruikt, is de gecompileerde `styles.css` altijd meegeleverd.
 
-- Geen frameworks nodig.
-- Geschikt voor GitHub Pages.
-- Responsive navigatie via `script.js`.
-- Interne links en ankers zijn gecontroleerd.
-- CTA's verwijzen naar bestaande pagina's, ankers, ZiN, Sligro.nl of mailto-links.
+## JavaScript
 
+`script.js` bevat:
 
-## Professionaliseringsslag
+- mobiele navigatie;
+- sluiten van het mobiele menu via linkklik of Escape;
+- een eenmalige studieproject-melding bovenaan de site;
+- opslag in `localStorage`, zodat de melding na wegklikken niet opnieuw verschijnt.
 
-Deze versie bevat een kwaliteitsronde op beeldgebruik, spacing en footer-layout. De homepage gebruikt nu geen herhaalde borrelplankbeelden meer in opeenvolgende secties. Afbeeldingen zijn opnieuw gekoppeld aan de bijbehorende inhoud, waaronder een passend beeld voor lokale dranken en een relevanter sampleboxbeeld. De footer en belangrijke contentblokken hebben consistentere witruimte gekregen.
+## Studieproject-melding
+
+De melding bovenin verschijnt één keer per browser. De bezoeker kan deze sluiten met het kruisje of met de knop **Akkoord**. Dezelfde disclaimer staat ook permanent in de footer.
+
+Wil je de melding opnieuw testen? Verwijder dan in de browser de `localStorage`-waarde:
+
+```js
+localStorage.removeItem("sligroLocalStudyNoticeDismissed")
+```
+
+## Contact en CTA's
+
+De samplebox- en proeverijaanmeldingen zijn bewust gedeactiveerd, omdat dit een placeholder-/studieprojectwebsite is. Er worden geen e-mails naar Sligro verstuurd.
+
+## Logo en afbeeldingen
+
+Het officiële Sligro-logo is als asset opgenomen in:
+
+- `assets/sligro-logo.jpeg`
+- `assets/sligro-logo-header.webp`
+
+De afbeeldingen staan in `assets/images/` als lokale WebP-assets. Ze zijn bedoeld als visuele conceptbeelden voor het studieproject en kunnen later worden vervangen door officiële fotografie.
+
+## Controle
+
+In deze versie zijn gecontroleerd:
+
+- interne links;
+- lokale assets;
+- mobiele navigatie;
+- GitHub Pages-structuur;
+- footer-disclaimer;
+- gedeactiveerde placeholder-CTA's.
