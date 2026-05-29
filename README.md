@@ -48,3 +48,8 @@ De afbeeldingen staan in `assets/images/` als lokale assets. De bestandsnamen zi
 - Responsive navigatie via `script.js`.
 - Interne links en ankers zijn gecontroleerd.
 - CTA's verwijzen naar bestaande pagina's, ankers, ZiN, Sligro.nl of mailto-links.
+
+
+## Professionaliseringsslag
+
+Deze versie bevat een kwaliteitsronde op beeldgebruik, spacing en footer-layout. De homepage gebruikt nu geen herhaalde borrelplankbeelden meer in opeenvolgende secties. Afbeeldingen zijn opnieuw gekoppeld aan de bijbehorende inhoud, waaronder een passend beeld voor lokale dranken en een relevanter sampleboxbeeld. De footer en belangrijke contentblokken hebben consistentere witruimte gekregen.

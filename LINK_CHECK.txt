@@ -1,1 +1,2 @@
-OK - alle interne links, ankers en lokale afbeeldingen gevonden.
+Alle interne links, ankers en lokale assets zijn gecontroleerd.
+Geen fouten gevonden.
