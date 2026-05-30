@@ -1,10 +1,5 @@
 # Sligro lokaal – GitHub Pages website
 
-Statische GitHub Pages-website voor een Sligro/ZiN-geïnspireerde inspiratieomgeving rondom lokale producten voor MKB-horecaondernemers.
-
-> Let op: dit is een studieproject voor Avans. Hoewel het concept is gemaakt binnen een leercontext met Sligro als leerbedrijf, is deze website niet gemaakt in opdracht van Sligro en betreft dit geen officiële Sligro-publicatie.
-
-## AI-Prompt (ChatGPT): 
 Maak een complete, professionele, statische GitHub Pages-website voor een Sligro-geïnspireerd concept rondom lokale producten voor MKB-horecaondernemers.
 
 De website moet voelen als een echte online inspiratieomgeving, alsof het een mogelijke uitbreiding is van het Sligro ZiN Inspiratielab. Het mag niet voelen als een schoolopdracht of theoretische campagnepagina. Gebruik dus geen zichtbare termen als briefing, communicatiedoelstelling, Touch/Tell/Sell, campagnehub of marketingtheorie.
@@ -45,6 +40,20 @@ https://www.sligrofoodgroup.nl/sites/default/files/download/sligro-logo.jpeg
 
 Gebruik veel ultrarealistische, professionele en warme beelden. De foto’s moeten passen bij de tekst en mogen geen generieke stock- of AI-uitstraling hebben. Gebruik onder andere beelden van borrelplanken, streekkaas, lokale telers, bakkers, horecaondernemers, proeverijen, sampleboxen, winkelherkenning en lokale producten. Gebruik WebP waar mogelijk.
 
+Verwerk daarnaast drie korte reclamevideo’s als lokale assets in `assets/videos/`:
+
+- `Reclamevideo_Feestdagen_Gemini.mp4`
+- `Reclamevideo_Herfst_Gemini.mp4`
+- `Reclamevideo_WK_Gemini.mp4`
+
+Gebruik op de website nette, korte bestandsnamen, bijvoorbeeld:
+
+- `reclamevideo-feestdagen.mp4`
+- `reclamevideo-herfst.mp4`
+- `reclamevideo-wk.mp4`
+
+De video’s zijn landscape-video’s. Toon ze daarom in een 16:9-container, gecentreerd en zonder verkeerde uitsnede. Gebruik `object-fit: contain` of een vergelijkbare oplossing zodat de volledige video zichtbaar blijft. De video’s mogen automatisch muted afspelen wanneer ze in beeld komen en moeten pauzeren wanneer ze uit beeld verdwijnen. Houd controls zichtbaar, zodat bezoekers de video zelf kunnen starten of pauzeren.
+
 Maak deze bestanden:
 
 - `index.html`
@@ -60,6 +69,7 @@ Maak deze bestanden:
 - `script.js`
 - `assets/`
 - `assets/images/`
+- `assets/videos/`
 - `assets/scss/styles.scss`
 - `README.md`
 - `LINK_CHECK.txt`
@@ -78,13 +88,23 @@ Maak een centrale conceptpagina met uitleg over lokale producten, voordelen, de 
 
 ### Inspiratie
 
-Maak een inspiratiepagina met menukaartideeën, lunchspecials, borrelconcepten, dessertideeën, tafelkaart/social-postideeën en een ultrarealistisch krijtbordbeeld met deze kreten:
+Maak een inspiratiepagina met menukaartideeën, lunchspecials, borrelconcepten, dessertideeën, tafelkaart/social-postideeën, een ultrarealistisch krijtbordbeeld en een aparte videosectie voor seizoenscampagnes.
+
+Het krijtbordbeeld bevat deze kreten:
 
 - Van boer tot borrelplank
 - Lokaal op de lunchkaart
 - Proef Limburg op je bord
 - Onze seizoensspecial met streekgroenten
 - Vraag naar de streekkaas van deze week
+
+Voeg op deze pagina ook een sectie **Seizoenscampagnes** toe met drie video-cards:
+
+- **Feestdagen** – video voor lokale producten rondom kerst, feestdagen, borrelmomenten en eindejaarsarrangementen.
+- **Herfst** – video voor seizoensgroenten, comfortfood, warme gerechten en herfstige kaartinspiratie.
+- **WK** – video voor borrelplanken, samen kijken, cafés, sportmomenten en deelbare bites.
+
+De video’s moeten in landscape-formaat worden getoond, netjes gecentreerd in hun containers en niet als verticale/portrait-video worden uitgesneden.
 
 ### Recepten
 
@@ -164,7 +184,14 @@ https://github.com/RoelD/MarcomSligro
 - Maak `styles.css` als gecompileerde stylesheet.
 - Voeg `assets/scss/styles.scss` toe als SCSS-bronbestand.
 - Houd CSS professioneel gestructureerd.
-- Maak `script.js` voor mobiele navigatie en de studieprojectmelding.
-- Zorg dat alle links, ankers en assets werken.
+- Maak `script.js` voor mobiele navigatie, de studieprojectmelding en het automatisch afspelen/pauzeren van de seizoensvideo’s wanneer ze in of uit beeld komen.
+- Zorg dat alle links, ankers, afbeeldingen en video-assets werken.
+
+Controleer ook:
+
+- video’s staan in landscape 16:9 en zijn gecentreerd;
+- video’s worden niet gecropt alsof ze portrait zijn;
+- video’s spelen alleen af wanneer dit logisch is, bijvoorbeeld wanneer ze in beeld komen;
+- video-assets staan lokaal in `assets/videos/`.
 
 Lever de volledige website op als downloadbare zip met alle bestanden direct in de root van de zip.
