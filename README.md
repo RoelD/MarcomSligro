@@ -166,7 +166,5 @@ https://github.com/RoelD/MarcomSligro
 - Houd CSS professioneel gestructureerd.
 - Maak `script.js` voor mobiele navigatie en de studieprojectmelding.
 - Zorg dat alle links, ankers en assets werken.
-- Voeg een README toe met uploadinstructies voor GitHub Pages.
-- Voeg een LINK_CHECK.txt toe met de uitgevoerde controles.
 
 Lever de volledige website op als downloadbare zip met alle bestanden direct in de root van de zip.
