@@ -2,21 +2,19 @@
 
 Maak een complete, professionele, statische GitHub Pages-website voor een Sligro-geïnspireerd concept rondom lokale producten voor MKB-horecaondernemers.
 
-De website moet voelen als een echte online inspiratieomgeving, alsof het een mogelijke uitbreiding is van het Sligro ZiN Inspiratielab. Het mag niet voelen als een schoolopdracht of theoretische campagnepagina. Gebruik dus geen zichtbare termen als briefing, communicatiedoelstelling, Touch/Tell/Sell, campagnehub of marketingtheorie.
+De website moet aanvoelen als een echte online inspiratieomgeving, vergelijkbaar met een mogelijke uitbreiding van het Sligro ZiN Inspiratielab. Het mag niet voelen als een theoretische campagnepagina of schoolopdracht. Gebruik dus geen zichtbare termen als briefing, communicatiedoelstelling, Touch/Tell/Sell, campagnehub of marketingtheorie.
 
-Centraal concept:
+Het centrale concept is:
 
 **Van boer tot borrelplank.**
 
-Doel van de website:
+De website helpt horecaondernemers om lokale producten te ontdekken, te herkennen in de winkel, toe te passen op hun menukaart en te vertalen naar een verhaal richting gasten.
 
-Help horecaondernemers lokale producten ontdekken, herkennen, toepassen op hun menukaart en vertalen naar een verhaal voor hun gasten.
+## Doelgroep
 
-Doelgroep:
+De doelgroep bestaat uit MKB-horecaondernemers, restauranteigenaren, fastservice-ondernemers, cateraars en hotelmanagers. Spreek hen aan als trotse vakmensen die weinig tijd hebben en praktische inspiratie zoeken.
 
-MKB-horecaondernemers, restauranteigenaren, fastservice-ondernemers, cateraars en hotelmanagers. Spreek hen aan als trotse vakmensen die weinig tijd hebben en praktische inspiratie zoeken.
-
-Look & feel:
+## Look & feel
 
 Sluit aan op de Sligro/ZiN-uitstraling:
 
@@ -27,7 +25,7 @@ Sluit aan op de Sligro/ZiN-uitstraling:
 - rustige cards;
 - veel witruimte;
 - afgeronde hoeken;
-- premium, zakelijke maar warme uitstraling.
+- premium, zakelijke maar warme foodservice-uitstraling.
 
 Gebruik:
 
@@ -38,23 +36,39 @@ Gebruik het officiële Sligro-logo:
 
 https://www.sligrofoodgroup.nl/sites/default/files/download/sligro-logo.jpeg
 
-Gebruik veel ultrarealistische, professionele en warme beelden. De foto’s moeten passen bij de tekst en mogen geen generieke stock- of AI-uitstraling hebben. Gebruik onder andere beelden van borrelplanken, streekkaas, lokale telers, bakkers, horecaondernemers, proeverijen, sampleboxen, winkelherkenning en lokale producten. Gebruik WebP waar mogelijk.
+Sla het logo lokaal op als asset. Maak geen nagemaakt logo.
 
-Verwerk daarnaast drie korte reclamevideo’s als lokale assets in `assets/videos/`:
+## Afbeeldingen en video’s
+
+Gebruik ultrarealistische, professionele en warme beelden. De beelden moeten passen bij de inhoud en mogen geen generieke stock- of duidelijke AI-uitstraling hebben. Gebruik afbeeldingen van lokale producten, borrelplanken, streekkaas, seizoensgroenten, lokale telers, bakkers, horecaondernemers, proeverijen, sampleboxen, winkelherkenning en duurzaamheidscontext.
+
+Gebruik WebP waar mogelijk.
+
+Verwerk daarnaast deze video’s als lokale assets in `assets/videos/`:
 
 - `Reclamevideo_Feestdagen_Gemini.mp4`
 - `Reclamevideo_Herfst_Gemini.mp4`
 - `Reclamevideo_WK_Gemini.mp4`
+- `Reclamevideo_Kerst_Gemini.mp4`
+- `Testimonial_Asperges_Gemini.mp4`
+- `Testimonial_Limousin_Gemini.mp4`
 
-Gebruik op de website nette, korte bestandsnamen, bijvoorbeeld:
+Gebruik op de website nette bestandsnamen, bijvoorbeeld:
 
 - `reclamevideo-feestdagen.mp4`
 - `reclamevideo-herfst.mp4`
 - `reclamevideo-wk.mp4`
+- `reclamevideo-kerst.mp4`
+- `testimonial-asperges.mp4`
+- `testimonial-limousin.mp4`
 
-De video’s zijn landscape-video’s. Toon ze daarom in een 16:9-container, gecentreerd en zonder verkeerde uitsnede. Gebruik `object-fit: contain` of een vergelijkbare oplossing zodat de volledige video zichtbaar blijft. De video’s mogen automatisch muted afspelen wanneer ze in beeld komen en moeten pauzeren wanneer ze uit beeld verdwijnen. Houd controls zichtbaar, zodat bezoekers de video zelf kunnen starten of pauzeren.
+De reclamevideo’s zijn bedoeld voor de inspiratiepagina. Toon ze in een aparte sectie **Seizoenscampagnes**. De video’s zijn landscape-video’s en moeten daarom in een 16:9-container staan. Centreer ze goed en voorkom dat ze als portrait-video worden uitgesneden. Gebruik bijvoorbeeld `object-fit: contain`. Laat ze muted afspelen wanneer ze in beeld komen en pauzeren wanneer ze uit beeld verdwijnen. Laat controls zichtbaar.
 
-Maak deze bestanden:
+De testimonialvideo’s over asperges en Limousin-runderen horen op de pagina **Verhalen**, in een aparte sectie **Makers aan het woord** of vergelijkbaar.
+
+## Bestandsstructuur
+
+Maak minimaal deze bestanden:
 
 - `index.html`
 - `van-boer-tot-borrelplank.html`
@@ -62,6 +76,7 @@ Maak deze bestanden:
 - `recepten.html`
 - `assortiment.html`
 - `herkennen.html`
+- `duurzaamheid.html`
 - `verhalen.html`
 - `contact.html`
 - `404.html`
@@ -74,23 +89,91 @@ Maak deze bestanden:
 - `README.md`
 - `LINK_CHECK.txt`
 
-De site moet volledig statisch zijn, responsive werken en geschikt zijn voor GitHub Pages. Gebruik HTML, CSS/SCSS en lichte JavaScript, geen frameworks.
+De website moet volledig statisch zijn en direct werken op GitHub Pages. Gebruik HTML, CSS/SCSS en lichte JavaScript. Gebruik geen frameworks.
+
+## Navigatie
+
+Gebruik op alle pagina’s dezelfde hoofdnavigatie:
+
+- Home
+- Van boer tot borrelplank
+- Inspiratie
+- Recepten
+- Assortiment
+- Herkennen
+- Duurzaamheid
+- Verhalen
+- Verder lezen
+
+Zorg dat de actieve pagina visueel wordt gemarkeerd. Controleer expliciet dat **Duurzaamheid** ook zichtbaar is op de pagina **Verhalen**.
 
 ## Pagina’s
 
-### Homepage
+### 1. Homepage – `index.html`
 
-Maak een sterke homepage met hero, introductie van “Van boer tot borrelplank”, routes naar recepten/inspiratie/assortiment/herkennen/verhalen, voordelen van lokaal werken, een uitgelicht recept en CTA-blokken.
+Maak een sterke homepage met:
 
-### Van boer tot borrelplank
+- hero-sectie;
+- introductie van “Van boer tot borrelplank”;
+- routes naar recepten, inspiratie, assortiment, herkennen, duurzaamheid en verhalen;
+- voordelen van lokaal werken;
+- uitgelicht recept;
+- concrete inspiratieblokken;
+- CTA-blok onderaan.
 
-Maak een centrale conceptpagina met uitleg over lokale producten, voordelen, de route van maker naar menukaart, productcategorieën, receptinspiratie, leveranciersverhalen, samplebox en proeverij.
+Voorbeeldtitel:
 
-### Inspiratie
+**Maak lokale producten zichtbaar op je kaart.**
 
-Maak een inspiratiepagina met menukaartideeën, lunchspecials, borrelconcepten, dessertideeën, tafelkaart/social-postideeën, een ultrarealistisch krijtbordbeeld en een aparte videosectie voor seizoenscampagnes.
+Voorbeeldlead:
 
-Het krijtbordbeeld bevat deze kreten:
+“Ontdek praktische recepten, productideeën, herkenningspunten in de winkel en verhalen waarmee je gasten een echt lokaal verhaal kunt vertellen.”
+
+### 2. Centrale conceptpagina – `van-boer-tot-borrelplank.html`
+
+Maak een centrale inspiratiepagina rond het concept.
+
+Hero:
+
+**Van boer tot borrelplank.**
+
+Subtitel:
+
+“Lokale producten voor horecaondernemers die hun gasten meer willen serveren dan alleen smaak.”
+
+Inhoud:
+
+- uitleg over lokale producten met een verhaal;
+- waarom lokaal werkt voor de zaak;
+- route van maker naar menukaart;
+- productcategorieën;
+- receptinspiratie;
+- leveranciersverhalen;
+- samplebox;
+- proeverij;
+- CTA naar assortiment, recepten, duurzaamheid en verhalen.
+
+Voordelen die terug mogen komen:
+
+- herkenbare herkomst;
+- onderscheidende menukaart;
+- korte keten;
+- smaak en beleving;
+- praktische toepasbaarheid via Sligro.
+
+### 3. Inspiratie – `inspiratie.html`
+
+Maak een inspiratiepagina met:
+
+- menukaartideeën;
+- lunchspecials;
+- borrelconcepten;
+- dessertideeën;
+- tafelkaart- en social-postideeën;
+- ultrarealistisch krijtbordbeeld;
+- sectie **Seizoenscampagnes** met vier video’s.
+
+Krijtbordkreten:
 
 - Van boer tot borrelplank
 - Lokaal op de lunchkaart
@@ -98,15 +181,14 @@ Het krijtbordbeeld bevat deze kreten:
 - Onze seizoensspecial met streekgroenten
 - Vraag naar de streekkaas van deze week
 
-Voeg op deze pagina ook een sectie **Seizoenscampagnes** toe met drie video-cards:
+Video-cards:
 
-- **Feestdagen** – video voor lokale producten rondom kerst, feestdagen, borrelmomenten en eindejaarsarrangementen.
-- **Herfst** – video voor seizoensgroenten, comfortfood, warme gerechten en herfstige kaartinspiratie.
-- **WK** – video voor borrelplanken, samen kijken, cafés, sportmomenten en deelbare bites.
+- **Feestdagen** – voor borrelmomenten, eindejaarsarrangementen en lokale feestdageninspiratie.
+- **Kerst** – voor kerstmenu’s, feestelijke borrelplanken en decemberarrangementen.
+- **Herfst** – voor seizoensgroenten, comfortfood en warme kaartinspiratie.
+- **WK** – voor borrelplanken, sportmomenten, cafés en deelbare bites.
 
-De video’s moeten in landscape-formaat worden getoond, netjes gecentreerd in hun containers en niet als verticale/portrait-video worden uitgesneden.
-
-### Recepten
+### 4. Recepten – `recepten.html`
 
 Voeg echte uitgewerkte recepten toe, minimaal:
 
@@ -116,65 +198,163 @@ Voeg echte uitgewerkte recepten toe, minimaal:
 - Gegrilde seizoensgroenten met kruidenolie en zachte kaas;
 - Mini-vlaaiproeverij bij koffie of dessert.
 
-Per recept: intro, ingrediënten, bereiding, serveertip, toepassing voor horeca, menukaarttekst en passende afbeelding.
+Per recept:
 
-### Assortiment
+- korte intro;
+- ingrediënten;
+- bereiding;
+- serveertip;
+- toepassing voor horeca;
+- menukaarttekst;
+- passende afbeelding;
+- link naar assortiment of inspiratie.
 
-Maak geen webshop, maar een inspiratiepagina met lokale productcategorieën zoals kaas, vleeswaren, brood, groenten, sauzen/garnituren, dranken, vlaai, samplebox en herkomstkaartjes.
+### 5. Assortiment – `assortiment.html`
 
-Per categorie: foto, uitleg, toepassing, label “Lokaal uit Limburg” en knop “Bekijk toepassing”. Zorg dat foto’s inhoudelijk kloppen bij de categorie.
+Maak geen webshop, maar een inspiratiepagina met lokale productcategorieën.
 
-### Herkennen
+Categorieën:
 
-Maak een praktische pagina “Zo herken je lokale producten in de winkel”. Toon vijf visuele herkenningspunten met ultrarealistische beelden:
+- Limburgse streekkaas;
+- regionale charcuterie;
+- streekbrood en banket;
+- seizoensgroenten;
+- mosterd, chutney en appelstroop;
+- lokale dranken en arrangementen;
+- samplebox/proefpakket;
+- herkomstkaartjes/storytellingmateriaal.
+
+Per categorie:
+
+- passende foto;
+- korte uitleg;
+- toepassing op de kaart;
+- label “Lokaal uit Limburg”;
+- knop naar een relevant recept of inspiratieblok.
+
+### 6. Herkennen – `herkennen.html`
+
+Maak een praktische pagina **Zo herken je lokale producten in de winkel**.
+
+Toon vijf herkenningspunten met ultrarealistische beelden:
 
 1. schapkaart “Lokaal uit Limburg”;
-2. hangkaart bij krat/display;
-3. vaste afdelingen;
+2. hangkaart bij krat of display;
+3. vaste afdelingen zoals groente & fruit, zuivel, bakkerij en borrel;
 4. vraag het een medewerker;
-5. herkomstkaartje of QR-code.
+5. herkomstkaartje of QR-code bij producten.
 
-### Verhalen
+Maak dit visueel met cards, nummers, korte uitleg en passende afbeeldingen.
 
-Maak een uitgebreide verhalenpagina met geloofwaardige verhalen van makers en ondernemers:
+### 7. Duurzaamheid – `duurzaamheid.html`
+
+Maak een aparte duurzaamheidspagina. Benoem de ecologische en duurzame voordelen van lokale producten genuanceerd en professioneel.
+
+Belangrijke inhoud:
+
+- lokale producten zijn niet automatisch altijd duurzamer, maar bieden duidelijke duurzaamheidskansen;
+- kortere ketens kunnen zorgen voor minder schakels tussen producent, groothandel en horecaondernemer;
+- kortere ketens kunnen bijdragen aan minder transportkilometers en daarmee mogelijk een kleinere CO₂-footprint;
+- de exacte impact hangt af van teeltwijze, logistiek, verpakking, koeling en schaalgrootte;
+- seizoensgericht werken sluit beter aan op natuurlijke beschikbaarheid;
+- transparantie over herkomst helpt ondernemers en gasten bewuster kiezen;
+- sampleboxen en proeverijen kunnen helpen om gerichter te testen en verspilling te beperken;
+- lokale producten versterken verbinding met de regio, makers en het landschap.
+
+Gebruik concrete blokken zoals:
+
+- Kortere keten;
+- Minder schakels tussen maker en menukaart;
+- Seizoensgericht werken;
+- Meer transparantie;
+- Gerichter testen;
+- Van impact naar gastbeleving.
+
+Voeg passende ultrarealistische afbeeldingen toe.
+
+### 8. Verhalen – `verhalen.html`
+
+Maak een uitgebreide verhalenpagina met geloofwaardige verhalen van makers, leveranciers en ondernemers.
+
+Geschreven verhalen:
 
 - kaasmaker;
 - lokale teler;
 - bakker;
-- horecaondernemer die meer lokaal is gaan gebruiken;
+- horecaondernemer die meer lokale producten gebruikt;
 - proeverij/leveranciersdag.
 
-Elk verhaal bevat een quote, ultrarealistische foto, meerdere alinea’s tekst en een duidelijke link met hoe ondernemers het verhaal richting gasten kunnen gebruiken. Vermijd overdreven reclamecopy.
+Elk verhaal bevat:
 
-### Contact
+- quote;
+- ultrarealistische foto;
+- meerdere alinea’s tekst;
+- uitleg over samenwerking, herkomst of toepassing;
+- uitleg hoe een ondernemer het verhaal richting gasten kan gebruiken;
+- geen overdreven reclamecopy.
+
+Voeg daarnaast een videosectie toe:
+
+**Makers aan het woord**
+
+Met twee testimonialvideo’s:
+
+- **Asperges uit de regio** – testimonial over lokale teelt, seizoen, kwaliteit en samenwerking.
+- **Limousin en aandacht voor dieren** – testimonial over runderen, dierenwelzijn, herkomst, vertrouwen en samenwerking.
+
+De video’s moeten dezelfde nette landscape-weergave gebruiken als de reclamevideo’s.
+
+### 9. Contact – `contact.html`
 
 Maak een verder-lezen/contactpagina met links naar:
 
 - https://zin.sligro.nl/
 - https://www.sligro.nl/
 
-Gebruik geen echt Sligro-mailadres of telefoonnummer. Gebruik dummygegevens:
+Gebruik geen echt Sligro-mailadres of echt Sligro-telefoonnummer.
+
+Gebruik dummygegevens:
 
 - `studieproject@placeholder.local`
 - `+31 000 000 0000`
 
-Samplebox- en proeverijknoppen moeten zichtbaar zijn maar niets doen, omdat dit een studieproject is. Maak ze disabled en vermeld dat de acties bewust gedeactiveerd zijn.
+Samplebox- en proeverijknoppen mogen zichtbaar zijn, maar moeten niets doen. Maak ze disabled en vermeld dat de acties bewust gedeactiveerd zijn omdat dit een statisch studieproject is.
 
-### 404
+### 10. 404 – `404.html`
 
-Maak een nette 404-pagina in dezelfde stijl.
+Maak een nette 404-pagina in dezelfde stijl met:
 
-## Belangrijke disclaimer
+- korte foutmelding;
+- knop terug naar homepage;
+- knop naar recepten of assortiment.
+
+## Disclaimer
 
 Zet in de footer duidelijk:
 
 > Studieproject Avans: deze website is ontwikkeld als studieproject voor Avans. Hoewel het concept is gemaakt binnen een leercontext met Sligro als leerbedrijf, is deze website niet gemaakt in opdracht van Sligro en betreft dit geen officiële Sligro-publicatie.
 
-Plaats dezelfde strekking ook als wegklikbare melding bovenaan de site. Deze melding moet één keer per browser verschijnen en daarna verdwijnen via `localStorage`. Sluiten moet kunnen met een kruisje, een knop “Akkoord” en Escape.
+Plaats dezelfde strekking ook als wegklikbare melding bovenaan de site. Deze melding moet:
+
+- één keer per browser verschijnen;
+- verdwijnen via `localStorage`;
+- te sluiten zijn met een kruisje;
+- te sluiten zijn met een knop “Akkoord”;
+- ook sluiten met Escape ondersteunen.
+
+Gebruik als localStorage-key:
+
+`sligroLocalStudyNoticeDismissed`
 
 ## Footer
 
-Voeg naast de disclaimer ook een link toe naar de GitHub-broncode met klein GitHub-icoon:
+Plaats in de footer:
+
+- korte omschrijving van de site;
+- studieprojectdisclaimer;
+- links naar belangrijke pagina’s;
+- link naar ZiN Inspiratielab;
+- link naar de GitHub-broncode met klein GitHub-icoon:
 
 https://github.com/RoelD/MarcomSligro
 
@@ -183,15 +363,26 @@ https://github.com/RoelD/MarcomSligro
 - Gebruik nette semantische HTML.
 - Maak `styles.css` als gecompileerde stylesheet.
 - Voeg `assets/scss/styles.scss` toe als SCSS-bronbestand.
-- Houd CSS professioneel gestructureerd.
-- Maak `script.js` voor mobiele navigatie, de studieprojectmelding en het automatisch afspelen/pauzeren van de seizoensvideo’s wanneer ze in of uit beeld komen.
-- Zorg dat alle links, ankers, afbeeldingen en video-assets werken.
+- Houd CSS logisch en professioneel gestructureerd.
+- Maak `script.js` voor mobiele navigatie, de studieprojectmelding en video autoplay/pauze.
+- Gebruik `IntersectionObserver` om video’s muted af te spelen wanneer ze in beeld komen en te pauzeren wanneer ze uit beeld verdwijnen.
+- Zorg dat de video’s in landscape 16:9 worden weergegeven.
+- Zorg dat alle interne links, ankers, afbeeldingen en video-assets werken.
+- Voeg een README toe met uploadinstructies voor GitHub Pages.
 
-Controleer ook:
+## Eindcontrole
 
-- video’s staan in landscape 16:9 en zijn gecentreerd;
-- video’s worden niet gecropt alsof ze portrait zijn;
-- video’s spelen alleen af wanneer dit logisch is, bijvoorbeeld wanneer ze in beeld komen;
-- video-assets staan lokaal in `assets/videos/`.
+Controleer voor oplevering:
+
+- alle interne links werken;
+- alle ankers bestaan;
+- alle lokale afbeeldingen bestaan;
+- alle lokale video’s bestaan;
+- de website is responsive;
+- de contactpagina bevat geen echt Sligro-mailadres of telefoonnummer;
+- samplebox- en proeverijknoppen zijn gedeactiveerd;
+- de studieprojectmelding verschijnt één keer en is wegklikbaar;
+- de GitHub-link staat in de footer;
+- de site werkt als statische GitHub Pages-site.
 
 Lever de volledige website op als downloadbare zip met alle bestanden direct in de root van de zip.
