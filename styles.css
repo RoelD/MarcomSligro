@@ -1337,3 +1337,74 @@ section {
     grid-template-columns: 1fr;
   }
 }
+
+/* Sustainability video */
+.sustainability-video-section {
+  padding-top: 18px;
+  padding-bottom: 56px;
+}
+
+.sustainability-video-card {
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.sustainability-video-card .video-frame {
+  aspect-ratio: 16 / 9;
+}
+
+.sustainability-video-card video {
+  object-fit: contain;
+  object-position: center center;
+  background: #141414;
+}
+
+
+
+/* Sustainability video layout with three cards */
+.sustainability-video-section {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.sustainability-video-section .section-head {
+  grid-column: 1 / -1;
+}
+
+.sustainability-video-card {
+  max-width: none;
+  margin: 0;
+}
+
+@media (max-width: 1120px) {
+  .sustainability-video-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Corrected sustainability video grid */
+.sustainability-video-section {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.sustainability-video-section .section-head {
+  grid-column: 1 / -1;
+}
+
+.sustainability-video-card {
+  max-width: none;
+  margin: 0;
+}
+
+.sustainability-video-card .video-frame {
+  aspect-ratio: 16 / 9;
+}
+
+@media (max-width: 1120px) {
+  .sustainability-video-section {
+    grid-template-columns: 1fr;
+  }
+}
